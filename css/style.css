@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Alegreya Sans', sans-serif;
+    background-color: #f3f1e9;
+    color:#56534c;
+    color: 16px;
+}
+
+h1, h2, h3, h4{
+    font-family: 'Alegreya', serif;
+}
+a{
+    text-decoration: none;
+}
+/*GLOBAL CLASSES*/
+
+.container{
+    width: 90%;
+    margin: auto;
+}
+/*CONTAINER SRTYLE MOBILE SCREEN*/
+@media screen and (max-width: 576px){
+    .container{
+        width: 100%
+    }
+}
+/*CONTAINER SRTYLE MEDIUM SCREEN*/
+@media screen and (max-width: 767px) and (min-width: 577px){
+    .container{
+        width: 450px
+    }
+}
+.title-section{
+    margin-bottom: 40px;
+}
+.title-section h2{
+    color: #56534c;
+    margin-bottom:10px
+}
+.title-section h4{
+    color: #a47d5e
+}
+.parent{
+    padding: 30px 0;
+}
+
+/* NAVBAR SECTION STYLE */
+.top-bar{
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, .5);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: #fff;
+}
+.top-bar .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+.logo{
+    width: 25%;
+}
+.logo h2{
+    font-family: 'Dancing Script', cursive;
+}
+.links{
+    width: 50%
+}
+.links ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+.links ul li a{
+    color: #fff;
+}
+.nav-icons{
+    width:25%;
+    text-align: right;
+}
+.nav-icons svg{
+    width: 25px;
+    padding-left: 10px;
+    cursor: pointer;
+    fill:#fff
+}
+.navbar-close{
+    display: none;
+    cursor: pointer;
+}
+.navbar-close svg{
+    width: 20px;
+    fill: #fff;
+}
+/* NAVBAR SECTION MOBILE SCREEN */
+@media screen and (max-width: 576px){
+    .links{
+        width: 100%
+    }
+    .logo{
+        width: 50%;
+        text-align: center;
+    }
+    .nav-icons{
+        display: none;
+    }
+}
+@media screen and (max-width: 767px) {
+    .links{
+        position: fixed;
+        left: -100%;
+        top: 50px;
+        background-color: rgba(0, 0, 0, .5);
+        z-index: 3;
+        height: 100%;
+        text-align: center;
+        padding: 50px;
+        transition: .7s left .5s;
+    }
+    .links ul{
+        flex-direction: column;
+    }
+    .navbar-close {
+        display: block;
+    }
+    .nav-icons{
+       text-align: center;
+    }
+    .links:hover{
+        left: 0;
+    }
+    .navbar-close:hover ~ .links{
+        left: 0;
+    }
+}
