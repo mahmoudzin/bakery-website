@@ -9,6 +9,7 @@ body{
     background-color: #f3f1e9;
     color:#56534c;
     color: 16px;
+    height: 1000px;
 }
 
 h1, h2, h3, h4{
@@ -57,6 +58,7 @@ a{
     top: 0;
     width: 100%;
     color: #fff;
+    z-index: 1;
 }
 .top-bar .navbar{
     display: flex;
@@ -80,6 +82,14 @@ a{
 }
 .links ul li a{
     color: #fff;
+    transition: .5 color;
+}
+.links ul li a:hover{
+    color: #a47d5e
+}
+.links ul .dash{
+    font-size:18px;
+    font-weight: bold;
 }
 .nav-icons{
     width:25%;
@@ -116,7 +126,7 @@ a{
     .links{
         position: fixed;
         left: -100%;
-        top: 50px;
+        top: 49px;
         background-color: rgba(0, 0, 0, .5);
         z-index: 3;
         height: 100%;
@@ -126,6 +136,8 @@ a{
     }
     .links ul{
         flex-direction: column;
+        justify-content: space-around;
+        height: 60%;
     }
     .navbar-close {
         display: block;
@@ -138,5 +150,69 @@ a{
     }
     .navbar-close:hover ~ .links{
         left: 0;
+    }
+    .links ul .dash{
+        display: none;
+    }
+    .links ul li{
+        font-size: 18px;
+    }
+}
+/* HOME SECTION */
+.home{
+    background-image: url(../images/home/1.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh; 
+    position: relative;
+    color: #fff;
+    z-index: 0;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.content h1{
+    font-size:  70px;
+    margin-bottom:  30px;
+}
+.content p{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.content button{
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    border: none;
+    padding: 10px 30px;
+    font-family:'Alegreya', serif;
+    cursor: pointer;
+    transition: .5s color;
+}
+.content button:hover{
+    color: #a47d5e
+}
+/*HOME SECTION MOBILE SCREEN*/
+@media screen and (max-width: 576px){
+    .content h1{
+        font-size:  36px;
+    }
+    .content p{
+        font-size: 16px;
+    }
+    .content button{
+        padding: 5px 10px;
+    }
+}
+@media screen and (max-width: 767px) {
+    .content h1{
+        font-size:  40px;
+    }
+    .content p{
+        font-size: 18px;
     }
 }
