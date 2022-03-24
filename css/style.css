@@ -8,12 +8,13 @@ body{
     font-family: 'Alegreya Sans', sans-serif;
     background-color: #f3f1e9;
     color:#56534c;
-    color: 16px;
-    height: 1000px;
+    font-size: 16px;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4{
     font-family: 'Alegreya', serif;
+    margin-bottom: 10px;
 }
 a{
     text-decoration: none;
@@ -43,7 +44,7 @@ a{
     color: #56534c;
     margin-bottom:10px
 }
-.title-section h4{
+.title-section p{
     color: #a47d5e
 }
 .parent{
@@ -214,5 +215,115 @@ a{
     }
     .content p{
         font-size: 18px;
+    }
+}
+/*MENU SECTION */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu-content{
+    width: 50%;
+    text-align: center;
+}
+.menu-text{
+    margin-bottom: 30px;
+}
+
+.cook-info{
+    background-image: url(../images/about/img3.png);
+    background-size: 200px;
+    background-position: 25% 5%;
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+    margin: 0 auto 30px;
+    position: relative;
+
+}
+.cook-info::after{
+    content: "Gaspare";
+    position: absolute;
+    top: 38px;
+    right: -80%;
+    border-top: 1px solid #dbdad6;
+    border-bottom: 1px solid #dbdad6;
+    padding: 5px;
+}
+.cook-info::before{
+    content: "Benito";
+    position: absolute;
+    top: 38px;
+    left: -80%;
+    border-top: 1px solid #dbdad6;
+    border-bottom: 1px solid #dbdad6;
+    padding: 5px;
+}
+.quote{
+    font-family: 'Dancing Script', cursive;
+    color: #a47d5e;
+    width: 200px;
+    position: relative;
+    margin:auto;
+    text-align:center
+}
+.quote svg{
+    width: 15px;
+    position: absolute;
+    fill:#d6d6d6
+}
+.quote .left{
+    top: -10px;
+    left: -10px;
+}
+.quote .right{
+    bottom: -10px;
+    right: -10px;
+}
+.menu-photos{
+    width:50%;
+    display:flex;
+    flex-wrap: wrap;
+}
+.menu-box{
+    width: 50%;
+    height: 150px;
+    padding: 10px;
+    position: relative;
+    
+}
+.menu-box .box{
+    height: 100%;
+    overflow:hidden;
+}
+.menu-box img{
+    width: 100%;
+    height: 100%;
+    transition: 1s transform;
+    object-fit: cover;
+}
+.menu-box .float-border{
+    border: 3px solid  #f3f1e9;
+    width: calc(100% - 30px);
+    height: calc(100% - 30px);
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+.menu-box:hover img{
+    transform: scale(1.1);
+}
+/*MENU SECTION MOBILE SCREEN*/
+@media screen and (max-width: 992px){
+    .menu-content{
+        width: 100%;
+    }
+    .menu-photos{
+        width: 100%;
+    }
+    .menu-box{
+        height: 200px;
     }
 }
