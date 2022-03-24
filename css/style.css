@@ -48,7 +48,7 @@ a{
     color: #a47d5e
 }
 .parent{
-    padding: 30px 0;
+    padding: 60px 0;
 }
 
 /* NAVBAR SECTION STYLE */
@@ -217,22 +217,22 @@ a{
         font-size: 18px;
     }
 }
-/*MENU SECTION */
-.menu{
+/*ABOUT SECTION */
+.about{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
-.menu-content{
+.about-content{
     width: 50%;
     text-align: center;
 }
-.menu-text{
+.about-text{
     margin-bottom: 30px;
 }
 
-.cook-info{
+.chef-info{
     background-image: url(../images/about/img3.png);
     background-size: 200px;
     background-position: 25% 5%;
@@ -243,7 +243,7 @@ a{
     position: relative;
 
 }
-.cook-info::after{
+.chef-info::after{
     content: "Gaspare";
     position: absolute;
     top: 38px;
@@ -252,7 +252,7 @@ a{
     border-bottom: 1px solid #dbdad6;
     padding: 5px;
 }
-.cook-info::before{
+.chef-info::before{
     content: "Benito";
     position: absolute;
     top: 38px;
@@ -282,29 +282,29 @@ a{
     bottom: -10px;
     right: -10px;
 }
-.menu-photos{
+.about-photos{
     width:50%;
     display:flex;
     flex-wrap: wrap;
 }
-.menu-box{
+.about-box{
     width: 50%;
-    height: 150px;
+    height: 200px;
     padding: 10px;
     position: relative;
     
 }
-.menu-box .box{
+.about-box .box{
     height: 100%;
     overflow:hidden;
 }
-.menu-box img{
+.about-box img{
     width: 100%;
     height: 100%;
     transition: 1s transform;
     object-fit: cover;
 }
-.menu-box .float-border{
+.about-box .float-border{
     border: 3px solid  #f3f1e9;
     width: calc(100% - 30px);
     height: calc(100% - 30px);
@@ -312,18 +312,102 @@ a{
     top: 15px;
     left: 15px;
 }
-.menu-box:hover img{
+.about-box:hover img{
     transform: scale(1.1);
 }
-/*MENU SECTION MOBILE SCREEN*/
-@media screen and (max-width: 992px){
-    .menu-content{
+/*ABOUT SECTION MOBILE SCREEN*/
+@media screen and (max-width: 576px){
+    .about-box{
         width: 100%;
-    }
-    .menu-photos{
-        width: 100%;
-    }
-    .menu-box{
-        height: 200px;
     }
 }
+@media screen and (max-width: 992px){
+    .about-content{
+        width: 100%;
+    }
+    .about-photos{
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+}
+/*MENU SECTION */
+.menu{
+    background-image: url(../images/menu/11.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.male-box{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: #f3f1e9;
+    position: relative;
+    box-shadow: -4px 4px 10px 0px rgb(79, 79, 79)
+}
+.male-image{
+    background-image: url(../images/menu/7.png);
+    background-size: cover;
+    background-position: center;
+    width: 40%;
+}
+.male-image img{
+    width: 100%;
+    object-fit: cover;
+}
+.male-desc{
+    width: 60%;
+    padding: 0 15px 15px;
+}
+.male-desc .title-section{
+    margin-top: 10px;
+}
+.male-desc p{
+    margin-bottom: 20px;
+}
+.ingredients-photos{
+    text-align: center;
+}
+.ingredients-photos img{
+    width: 90px;
+    height: 80px;
+    padding: 0 5px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.time-to-ready{
+    text-align: center;
+    position:absolute;
+    background-color: #f3f1e9;
+    top: -30px;
+    right: -30px;
+    padding: 20px;
+    box-shadow: -4px 4px 10px 0px rgb(79, 79, 79)
+}
+/*MENU SECTION MOBILE SCREEN*/
+ @media screen and (max-width: 576px){
+    .male-image{ 
+        display: none; 
+    }
+    .male-desc{
+        width: 95%;
+    }
+}  
+@media screen and (max-width: 767px) {
+    .male-box{
+        width: 100%;
+    }
+    .ingredients-photos img{
+        width: 70px;
+        height: 60px;
+    }
+}
+@media screen and (max-width: 992px) and (min-width:768px){
+    .male-box{
+        width: 90%;
+    }
+}
+
