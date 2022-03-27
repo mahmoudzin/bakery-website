@@ -9,7 +9,6 @@ body{
     background-color: #f3f1e9;
     color:#56534c;
     font-size: 16px;
-    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4{
@@ -59,7 +58,7 @@ a{
     top: 0;
     width: 100%;
     color: #fff;
-    z-index: 1;
+    z-index: 10;
 }
 .top-bar .navbar{
     display: flex;
@@ -408,15 +407,145 @@ a{
         width: 90%;
     }
 }
-
-
-
-
-
-
-
-
-
+/*reservation SECTION*/
+.reservation{
+    background-image:url(../images/offer/img6.png);
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: top center;
+    position: relative;
+}
+.reservation::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    height: 100%;
+    z-index: 0;
+}
+.flex-box{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+.offer{
+    text-align:center
+}
+.offer h2, .offer h3{
+    color: #fff;
+} 
+.offer-type{
+    margin-bottom:20px;
+}
+.offer-type p{
+    color: #c2beba;
+    margin-bottom: 10px;
+}
+.offer-type span{
+    color: #dfc691;
+    font-size: 20px;
+}
+.bills{
+    position: relative;
+}
+.bill-parent{
+    background-color: #f3f1e9;
+    padding:5px;
+    position: absolute;
+    width: 350px
+}
+.bill-0{
+    transform: scale(1, .8);
+    z-index: 0;
+    top: 20px;
+    right: 0;
+}
+.bill-1{
+    transform: scale(1, .9);
+    z-index: 1;
+    top: 15px;
+    right: 8px;
+}
+.bill-2{
+    z-index: 2;
+    top: 10px;
+    right: 16px;
+}
+.bill{
+    border:1px dashed #c2beba;
+    padding: 20px 30px;
+    text-align: center
+}
+.bill-head{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-bottom:15px;
+}
+.icon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #c2beba;
+    padding: 5px;
+    margin: 0 auto 30px;
+    position: relative;
+    z-index: 1;
+    background-color: #f3f1e9;
+}
+.icon img{
+    width: 100%
+}
+.bill-head::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    border: 1px solid #c2beba;
+    bottom: -32px;
+}
+.bill-content h2{
+    font-size: 35px;
+    margin-bottom:20px
+}
+.bill-content p{
+    margin-bottom: 30px;
+}
+.bill-content button{
+    border: 1px solid #c2beba;
+    color: #a47d5e;
+    background-color: transparent;
+    padding: 10px 60px;
+    font-family: 'Alegreya', serif;
+    cursor: pointer;
+    transition: .5s background-color, .5s color
+}
+.bill-content button:hover{
+    color: #fff;
+    background-color: #a47d5e
+}
+/*MENU SECTION MOBILE SCREEN*/
+@media screen and (max-width: 576px){
+    
+}  
+@media screen and (max-width: 767px) {
+    .flex-box{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .bill-1, .bill-0{
+        display: none;
+    }
+    .bill-parent{
+        width: 300px;
+        position: static;
+    }
+    .offer{
+        margin-top: 30px;
+    }
+}
 
 /*Animtion*/
 @keyframes changeBackground {
@@ -436,3 +565,4 @@ a{
         background-image: url(../images/home/5.jpg);
     }
 }
+
