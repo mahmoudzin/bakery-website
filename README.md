@@ -8,15 +8,15 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://mahmoudzin.github.io/bakery-website/">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://www.youtube.com/channel/UCM5gwqOEgMANrDxPskp1vHg">
       Solution
     </a>
     <span> | </span>
-    <a href="https://devchallenges.io/challenges/5ZnOYsSXM24JWnCsNFlt">
+    <a href="https://www.youtube.com/channel/UCM5gwqOEgMANrDxPskp1vHg">
       Challenge
     </a>
   </h3>
@@ -24,16 +24,6 @@
 
 <!-- TABLE OF CONTENTS -->
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Built With](#built-with)
-- [Features](#features)
-- [How to use](#how-to-use)
-- [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
-
-<!-- OVERVIEW -->
 
 ## Overview
 
