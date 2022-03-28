@@ -168,13 +168,12 @@ a{
 }
 /* HOME SECTION */
 .home{
-    background-image: url(../images/home/1.png);
     background-size: 100% 100%;
     background-attachment: fixed;
     height: 100vh; 
     position: relative;
     color: #fff;
-    /* animation-name: changeBackground; */
+    animation-name: changeBackground; 
     animation-duration: 15s;
     animation-iteration-count: infinite;
     /* animation-direction: alternate; */
@@ -197,6 +196,7 @@ a{
 .content p{
     font-size: 24px;
     margin-bottom: 20px;
+    text-align: center;
 }
 .content button{
     background-color: rgba(0, 0, 0, .5);
