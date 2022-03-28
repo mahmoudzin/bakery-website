@@ -44,7 +44,7 @@
 - [felx-box](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 - [How to change the color of an svg element?](https://stackoverflow.com/questions/22252472/how-to-change-the-color-of-an-svg-element)
 - [How TO - Smooth Scroll](https://www.w3schools.com/howto/howto_css_smooth_scroll.asp)
-- [This UI design by Malte Westedt](https://dribbble.com/Maltewes)
+- [This design by Malte Westedt](https://dribbble.com/Maltewes)
 
 ## Contact
 
